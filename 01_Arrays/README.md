@@ -1,9 +1,18 @@
 # Arrays
 
-## What is an array?
+## Algorithms Completed
 
-## Why do we use arrays?
+- ✅ Linear Search
 
-## Access
+### Linear Search
 
-## Traversal
+**Idea:**
+Check each element one by one until the target is found.
+
+**Time Complexity**
+- Best Case: O(1)
+- Average Case: O(n)
+- Worst Case: O(n)
+
+**Space Complexity**
+- O(1)
