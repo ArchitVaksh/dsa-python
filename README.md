@@ -140,7 +140,7 @@ Use two pointers: one starting from the beginning of the array and the other fro
 
 ---
 
-# Second Largest Element
+# 6. Second Largest Element
 
 ## Problem
 
