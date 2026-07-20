@@ -137,3 +137,80 @@ Use two pointers: one starting from the beginning of the array and the other fro
 ### Space Complexity
 
 - **O(1)**
+
+---
+
+# Second Largest Element
+
+## Problem
+
+Given an array of integers, find the **second largest distinct element**.
+
+### Example
+
+```python
+array = [10, 5, 20, 8, 15]
+```
+
+**Output:**
+
+```python
+15
+```
+
+Another example:
+
+```python
+array = [5, 5, 3, 2]
+```
+
+**Output:**
+
+```python
+3
+```
+
+---
+
+## Idea
+
+Traverse the array only once while maintaining two variables:
+
+- `largest` – Stores the largest element found so far.
+- `second_largest` – Stores the second largest distinct element found so far.
+
+Whenever a new largest element is found:
+- The previous largest becomes the second largest.
+- The current element becomes the new largest.
+
+Otherwise, if the current element is greater than the second largest but different from the largest, update the second largest.
+
+---
+
+## Algorithm
+
+1. Initialize `largest` and `second_largest` to negative infinity.
+2. Traverse each element of the array.
+3. If the current element is greater than `largest`:
+   - Assign `largest` to `second_largest`.
+   - Update `largest` with the current element.
+4. Otherwise, if the current element is different from `largest` and greater than `second_largest`:
+   - Update `second_largest`.
+5. Return `second_largest`.
+6. If no distinct second largest element exists, return `None`.
+
+---
+
+## Time Complexity
+
+**O(n)**
+
+The array is traversed only once.
+
+---
+
+## Space Complexity
+
+**O(1)**
+
+Only two extra variables are used regardless of the size of the array.
