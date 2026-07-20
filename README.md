@@ -110,3 +110,30 @@ Compare every element with its next element. If any element is greater than the 
 ### Space Complexity
 
 - **O(1)**
+
+---
+
+# 5. Reverse an Array
+
+## Idea
+
+Use two pointers: one starting from the beginning of the array and the other from the end. Swap the elements at both pointers and move them toward each other until they meet.
+
+## Algorithm
+
+1. Initialize `left` to the first index.
+2. Initialize `right` to the last index.
+3. Swap the elements at `left` and `right`.
+4. Increment `left` and decrement `right`.
+5. Repeat until `left` is greater than or equal to `right`.
+6. Return the reversed array.
+
+### Time Complexity
+
+- Best Case: **O(n)**
+- Average Case: **O(n)**
+- Worst Case: **O(n)**
+
+### Space Complexity
+
+- **O(1)**
