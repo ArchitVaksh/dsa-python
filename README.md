@@ -215,6 +215,8 @@ The array is traversed only once.
 
 Only two extra variables are used regardless of the size of the array.
 
+---
+
 # 7. Move All Zeros to the End
 
 ## Problem
@@ -272,3 +274,55 @@ The array is traversed only once.
 **O(1)**
 
 The array is modified in place without using any extra data structures.
+
+---
+
+# 8. Left Rotate Array by One Position
+
+## Problem
+
+Given an array, rotate it to the left by one position.
+
+### Example
+
+```python
+array = [1, 2, 3, 4, 5]
+```
+
+**Output:**
+
+```python
+[2, 3, 4, 5, 1]
+```
+
+---
+
+## Idea
+
+Traverse the array from left to right and swap each element with its previous element. Each swap moves the first element one position to the right until it reaches the end of the array, resulting in a left rotation by one position.
+
+---
+
+## Algorithm
+
+1. If the array has zero or one element, return it.
+2. Traverse the array from index `1` to the last index.
+3. Swap the current element with the previous element.
+4. Continue until the end of the array.
+5. Return the rotated array.
+
+---
+
+## Time Complexity
+
+**O(n)**
+
+The array is traversed once.
+
+---
+
+## Space Complexity
+
+**O(1)**
+
+The rotation is performed in-place without using any extra data structures.
