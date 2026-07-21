@@ -214,3 +214,61 @@ The array is traversed only once.
 **O(1)**
 
 Only two extra variables are used regardless of the size of the array.
+
+# 7. Move All Zeros to the End
+
+## Problem
+
+Given an array, move all the `0`s to the end while maintaining the relative order of the non-zero elements.
+
+### Example
+
+```python
+array = [0, 1, 0, 3, 12]
+```
+
+**Output:**
+
+```python
+[1, 3, 12, 0, 0]
+```
+
+---
+
+## Idea
+
+Use two pointers:
+
+- `index` keeps track of the position where the next non-zero element should be placed.
+- Traverse the array from left to right.
+- Whenever a non-zero element is found, swap it with the element at `index` and increment `index`.
+
+This moves all non-zero elements to the front while naturally shifting all zeros to the end.
+
+---
+
+## Algorithm
+
+1. Initialize `index` to `0`.
+2. Traverse the array.
+3. If the current element is not `0`:
+   - Swap it with `array[index]`.
+   - Increment `index`.
+4. Continue until all elements are processed.
+5. Return the modified array.
+
+---
+
+## Time Complexity
+
+**O(n)**
+
+The array is traversed only once.
+
+---
+
+## Space Complexity
+
+**O(1)**
+
+The array is modified in place without using any extra data structures.
