@@ -67,4 +67,4 @@ Initially I thought duplicate elements had to be physically removed from the arr
 
 Later I realized that only the first `k` elements matter, so overwriting duplicates is enough.
 
-I also learned that Python lists are mutable, so modifying a list inside a function also changes the original list.
+I also learned that Python lists are mutable, so modifying a list inside a function also changes the original list. *
